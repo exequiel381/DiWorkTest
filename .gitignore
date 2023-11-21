@@ -1,0 +1,12 @@
+#Ignoring al folders named 
+
+bin/
+obj/
+
+#Ignoring specific folder.
+
+/.vs
+
+#Ignoring al files that finish in 
+
+*.suo
