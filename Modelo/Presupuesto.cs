@@ -88,19 +88,26 @@ namespace Modelo
         {
             get
             {
-                string ids = "";
+                string lista = "";
+                int maximoPorLinea = 50;
                 for (int i = 0; i < Desperfectos.Count; i++)
                 {
+                    if(lista.Length >= maximoPorLinea)
+                    {
+                        lista += "\n";
+                        maximoPorLinea += 50;
+                    }
+
                     if (i == Desperfectos.Count - 1)
                     {
-                        ids += Desperfectos[i].NombresRepuestos;
+                        lista += Desperfectos[i].NombresRepuestos;
                     }
                     else
                     {
-                        ids += Desperfectos[i].NombresRepuestos + ",";
+                        lista += Desperfectos[i].NombresRepuestos + ", ";
                     }
                 }
-                return ids;
+                return lista;
             }
         }
     }

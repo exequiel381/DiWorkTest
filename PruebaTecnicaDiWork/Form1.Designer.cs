@@ -212,7 +212,7 @@
             0});
             this.numCantP.Name = "numCantP";
             this.numCantP.Size = new System.Drawing.Size(61, 20);
-            this.numCantP.TabIndex = 12;
+            this.numCantP.TabIndex = 11;
             this.numCantP.Value = new decimal(new int[] {
             1,
             0,
@@ -225,7 +225,7 @@
             this.cbxTipo.Location = new System.Drawing.Point(107, 14);
             this.cbxTipo.Name = "cbxTipo";
             this.cbxTipo.Size = new System.Drawing.Size(119, 21);
-            this.cbxTipo.TabIndex = 11;
+            this.cbxTipo.TabIndex = 10;
             this.cbxTipo.SelectedIndexChanged += new System.EventHandler(this.cbxTipo_SelectedIndexChanged);
             // 
             // pMoto
@@ -257,7 +257,7 @@
             0});
             this.nCilindrada.Name = "nCilindrada";
             this.nCilindrada.Size = new System.Drawing.Size(120, 20);
-            this.nCilindrada.TabIndex = 14;
+            this.nCilindrada.TabIndex = 12;
             this.nCilindrada.Value = new decimal(new int[] {
             1,
             0,
@@ -295,14 +295,14 @@
             this.cbxRepuestos.Location = new System.Drawing.Point(365, 424);
             this.cbxRepuestos.Name = "cbxRepuestos";
             this.cbxRepuestos.Size = new System.Drawing.Size(217, 21);
-            this.cbxRepuestos.TabIndex = 5;
+            this.cbxRepuestos.TabIndex = 17;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(403, 451);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(149, 23);
-            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.TabIndex = 18;
             this.btnAgregar.Text = "Agregar repuesto";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -346,7 +346,7 @@
             0});
             this.nManoDeObra.Name = "nManoDeObra";
             this.nManoDeObra.Size = new System.Drawing.Size(120, 20);
-            this.nManoDeObra.TabIndex = 17;
+            this.nManoDeObra.TabIndex = 14;
             this.nManoDeObra.Value = new decimal(new int[] {
             1,
             0,
@@ -358,7 +358,7 @@
             this.btnAgregarDesp.Location = new System.Drawing.Point(636, 22);
             this.btnAgregarDesp.Name = "btnAgregarDesp";
             this.btnAgregarDesp.Size = new System.Drawing.Size(149, 23);
-            this.btnAgregarDesp.TabIndex = 12;
+            this.btnAgregarDesp.TabIndex = 16;
             this.btnAgregarDesp.Text = "Agregar desperfecto";
             this.btnAgregarDesp.UseVisualStyleBackColor = true;
             this.btnAgregarDesp.Click += new System.EventHandler(this.btnAgregarDesp_Click);
@@ -378,7 +378,7 @@
             0});
             this.nTiempo.Name = "nTiempo";
             this.nTiempo.Size = new System.Drawing.Size(120, 20);
-            this.nTiempo.TabIndex = 16;
+            this.nTiempo.TabIndex = 15;
             this.nTiempo.Value = new decimal(new int[] {
             1,
             0,
@@ -420,7 +420,7 @@
             this.txtDesc.Location = new System.Drawing.Point(93, 22);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(460, 20);
-            this.txtDesc.TabIndex = 7;
+            this.txtDesc.TabIndex = 13;
             // 
             // label16
             // 
@@ -476,7 +476,7 @@
             this.btnGenerar.Location = new System.Drawing.Point(396, 545);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(144, 23);
-            this.btnGenerar.TabIndex = 10;
+            this.btnGenerar.TabIndex = 19;
             this.btnGenerar.Text = "Generar presupuesto";
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
@@ -546,21 +546,21 @@
             this.txtPatente.Location = new System.Drawing.Point(614, 150);
             this.txtPatente.Name = "txtPatente";
             this.txtPatente.Size = new System.Drawing.Size(100, 20);
-            this.txtPatente.TabIndex = 9;
+            this.txtPatente.TabIndex = 6;
             // 
             // txtModelo
             // 
             this.txtModelo.Location = new System.Drawing.Point(450, 150);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(100, 20);
-            this.txtModelo.TabIndex = 8;
+            this.txtModelo.TabIndex = 5;
             // 
             // txtMarca
             // 
             this.txtMarca.Location = new System.Drawing.Point(287, 150);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
-            this.txtMarca.TabIndex = 7;
+            this.txtMarca.TabIndex = 4;
             // 
             // frmPresupuestador
             // 

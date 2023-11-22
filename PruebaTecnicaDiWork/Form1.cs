@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -113,7 +114,14 @@ namespace PruebaTecnicaDiWork
         {
             try
             {
-                if (desperfectos.Count > 0 && txtApellido.Text != "")
+                string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+                if (!Regex.IsMatch(txtEmail.Text, emailPattern))
+                {
+                    MessageBox.Show("Debe ingresar un email valido");
+                    return;
+                }
+
+                if (desperfectos.Count > 0 && txtApellido.Text != "" && txtMarca.Text != "" && txtModelo.Text != "")
                 {
                     Presupuesto p =  _presupuestoLogica.GenerarPresupuesto(txtNom.Text, txtApellido.Text, txtEmail.Text, chkAuto.Checked, _tipoAutomovil, numCantP.Value, nCilindrada.Value.ToString(), desperfectos.ToList(), txtMarca.Text, txtModelo.Text, txtPatente.Text);
                     this.desperfectos.Clear();
@@ -122,6 +130,10 @@ namespace PruebaTecnicaDiWork
                     var VistaVisualizadorPresupuesto = new VisualizadorPresupuesto(p);
                     VistaVisualizadorPresupuesto.ShowDialog();
                     //MessageBox.Show("Presupuesto creado con exito");
+                }
+                else
+                {
+                    MessageBox.Show("Asegurese de haber llenado todos los campos y haber ingresado desperfectos");
                 }
             }
             catch (Exception ex)

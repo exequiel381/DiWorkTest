@@ -1,0 +1,5 @@
+1 - Incluimos patron estrategia (Por la parte que dice "Descuentos correspondientes") y builder para construir el presupuesto que se compone de varios objetos.
+2 - No contemplamos flujos alternos para simplificar el desarrollo.
+3 - Podemos incluir una columna cantidad en la tabla "DesperfectoRepuesto". Al igual que una columna fecha para el presupuesto. No son necesarias para el alcance fijado en mi opinion.
+4 - Separamos los datos del cliente en otra tabla para una mejor normalizacion y no redundar datos. Lo que me permitira agregar un control de existencia del cliente, dependiendo del email por ejemplo.
+
